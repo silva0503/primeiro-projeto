@@ -10,3 +10,8 @@ body{
     font-size:1rem; /*tamanho de fonte base(geralmente 16px)*/
     font-family: 'Monsterrat';/* fonte principal do site*/
 }
+/*Estilo do cabeçalho*/
+header{
+    background-color: #ffffff;/*fundo branco para o cabeçalho*/
+    
+}
