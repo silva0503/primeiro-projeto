@@ -26,3 +26,74 @@ section{
     color: #cb6d43; /*cor marrom-alaranjada para os link*/
     font-weight: 600; /*texto em negrito*/
 }
+.inicio-fundo{
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100% ;
+    height: 606px;
+    padding: 40;
+    margin: 0 auto;
+}
+
+/*posicionamento para a imagem à direita*/
+.img-inicio{
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width:45rem;
+    height:auto;
+}
+
+.esquerda-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+}
+.botao-inicio {
+    background-color: var(--verde-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+.display-4{
+    text-shadow: -5px 5px var(--verde-claro);
+}
+
+#tropicália{
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat, url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#tropicália.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+h2{
+    font-family: 'lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--verde-claro);
+}
+
+#galeria{
+    background-color: #f4f4f4;
+}
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+
+
+}
