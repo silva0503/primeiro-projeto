@@ -1,130 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&#39');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap&#39');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&#39;);
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap&#39;);
 
 :root {
-    --verde-claro:#00ff00;/*Definir uma varíavel CSS para a cor verde*/
-
+    --laranja-claro: #FF862A;
 }
 
-body{
-    font-size:1rem; /*tamanho de fonte base(geralmente 16px)*/
-    font-family: 'Monsterrat';/* fonte principal do site*/
-}
-/*Estilo do cabeçalho*/
-header{
-    background-color: #ffffff;/*fundo branco para o cabeçalho*/
-    
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat';
 }
 
-/*seções gerais*/
-section{
-    padding-bottom: 5rem; /*Espaçamento inferir grande para seções*/
+header {
+    background-color: #ffffff;
 }
 
-/*Links de navegação*/
-.nav-link{
-    color: #cb6d43; /*cor marrom-alaranjada para os link*/
-    font-weight: 600; /*texto em negrito*/
+
+section {
+    padding-bottom: 5rem;
 }
-.inicio-fundo{
+
+
+.nav-link {
+    color: #CB6D43;
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    /* aula 3 */
     background-image: url('img/4965007.jpg');
+    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
     border-radius: 80px;
-    width: 100% ;
+    width: 100%;
     height: 606px;
-    padding: 40;
+    padding: 40px;
     margin: 0 auto;
 }
 
-/*posicionamento para a imagem à direita*/
-.img-inicio{
+/* posicionamento para a imagem à direita */
+.img-inicio {
     position: absolute;
     right: 0;
     top: 18rem;
-    width:45rem;
-    height:auto;
+    width: 45rem;
+    height: auto;
 }
 
-.esquerda-conteudo{
+
+.esquerda-conteudo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:1rem;
+    gap: 1rem;
 }
+
+
 .botao-inicio {
-    background-color: var(--verde-claro);
+    background-color: var(--laranja-claro);
     border-radius: 30px;
     border: none;
     width: 14em;
+    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
+    /* Convertido para em */
     align-content: center;
-}
-.display-4{
-    text-shadow: -5px 5px var(--verde-claro);
+
 }
 
-#tropicália{
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+#tropicalia {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     background: url('img/flor.png') top right no-repeat,
-     url('img/flor-esquerda.png') bottom left no-repeat;
+        url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
+    /* Ajuste o tamanho conforme necessário */
 }
 
-#tropicália.container{
+#tropicalia .container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 1;
-
+    /* Garante que o conteúdo fica acima das imagens do background */
 }
 
-h2{
-    font-family: 'lemon', serif;
+
+h2 {
+    font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--verde-claro);
+    color: var(--laranja-claro);
 }
 
-#galeria{
-    background-color: #f4f4f4;
+#galeria {
+    background-color: #FAF4F4;
+
 }
+
 .fundo-galeria {
     background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-        background-size: 180px 180px;
+    background-size: 180px 180px;
 }
 
 #contato {
     background-image: url('img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
-    /*Espaçamento interno para a seção de contato*/
+    /* Espaçamento interno para a seção de contato */
+
 }
 
-.fomulario {
+.formulario {
     background-color: #ffffff;
     padding: 2rem;
-    /*Espaçamento interno dentro do formulário*/
+    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /*Borda arredondada para o formulário*/
+    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /*Sombra suave para destacar o formulário*/
+    /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
 .formulario button {
     background-color: #CB6D43;
     border: none;
-    font-weight: bold0;
+    font-weight: bold;
 }
-/*chama a classe do bootstrap para modificar a cor*/
-.form-control{
+
+/* chama classe do bootstrap para modificar a cor */
+.form-control {
     background-color: #F1EDEF;
-}
-
-
-
